@@ -1,0 +1,39 @@
+{
+  "name": "socket.io_realtime",
+  "version": "1.0.0",
+  "description": "Socket Mern Stack",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "frontend": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "render-postbuild": "NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashpatoliya/socket.io_realtime.git"
+  },
+  "keywords": [
+    "socket",
+    "mern",
+    "react",
+    "node",
+    "realtime",
+    "chat",
+    "application"
+  ],
+  "author": "yashpatoliya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashpatoliya/socket.io_realtime/issues"
+  },
+  "homepage": "https://github.com/yashpatoliya/socket.io_realtime#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.3",
+    "socket.io": "^4.7.4"
+  }
+}
+
